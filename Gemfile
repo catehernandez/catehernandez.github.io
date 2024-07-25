@@ -10,3 +10,5 @@ gem "github-pages", group: :jekyll_plugins
 
 # comment out all other gems
 #gem "jekyll", "~> 4.0"
+
+gem "webrick", "~> 1.8"
