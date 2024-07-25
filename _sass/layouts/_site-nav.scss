@@ -11,7 +11,6 @@
 .site-nav {
   list-style: none;
   padding: 0;
-  text-align: center;
 
   @media (min-width: $medium) {
     display: flex;
@@ -34,7 +33,6 @@
   @media (min-width: $medium) {
     color: $near-black;
     padding-bottom: 0.1rem;
-    text-transform: uppercase;
 
     @include med-underline($tangerine);
   }
