@@ -1,41 +1,12 @@
-#about-me {
+#intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  line-height: 2em;
-
-  a {
-    color: $tangerine;
-    position: relative !important; //required for hover animation
-    text-decoration: none;
-
-    &:visited {
-      color: $tangerine;
-    }
-
-    @include animated-hover-underline($tangerine);
-  }
 
   @media (min-width: $medium) {
-    top: 150px;
-    width: 85%;
+    max-width: 680px;
+    /** Fill total screen height minus the height of the header */
+    height: calc(100vh - 94px);
   }
-}
-
-.site-title {
-  margin: 0;
-
-  @media (min-width: $medium) {
-    width: min-content;
-  }
-}
-
-.toggle-about {
-  margin-top: 0.5em;
-  text-align: right;
-}
-
-.toggle-about__link {
-  text-transform: lowercase;
 }

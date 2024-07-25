@@ -5,23 +5,22 @@ html {
 }
 
 body {
-  margin: 0 7vw;
   background-color: $cream;
-}
+  margin: 0px 22px;
 
-.site-header {
-  position: fixed;
-  right: 1.5rem;
-  top: 1.5rem;
-
-  /* Position top on larger screens */
   @media (min-width: $medium) {
-    top: 2.5rem;
-    right: 2.5rem;
+    margin: 0px 36px;
+  }
+
+  @media (min-width: $x-large) {
+    margin: auto;
+    max-width: 1132px;
   }
 }
+
 
 //toggle on body when mobile nav is open
 .overflow-hidden {
   overflow: hidden;
 }
+

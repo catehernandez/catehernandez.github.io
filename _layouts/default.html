@@ -27,15 +27,7 @@
     <![endif]-->
 
     <section id="top" role="presentation" />
-    <header class="site-header">
-      <button
-        class="open-nav-btn bubble bubble--orange"
-        onclick="toggleMobileNav()"
-      >
-        <i class="icon-menu"></i>
-      </button>
-      <nav class="primary-nav">{% include site-nav.html %}</nav>
-    </header>
+    {% include header.html %}
 
     <main>{{ content }}</main>
 

@@ -1,0 +1,19 @@
+/** Ensure side margin values correspond to the margins set on `body` **/
+.site-header {
+  align-items: center;
+  background-color: $cream;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 22px 18px; 
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  z-index: 1000;
+
+  @media (min-width: $medium) {
+    height: 94px;
+    padding: 0;
+    position: static;
+  }
+}
