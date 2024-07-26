@@ -26,20 +26,11 @@
       </p>
     <![endif]-->
 
-    <section id="top" role="presentation" />
+    <section id="top" role="presentation"></section>
     {% include header.html %}
 
     <main>{{ content }}</main>
 
-    <!-- Mobile nav overlay -->
-    <aside class="mobile-nav__overlay">
-      <button
-        class="close-nav-btn bubble bubble--ecru"
-        onclick="toggleMobileNav()"
-      >
-        <i class="icon-close"></i>
-      </button>
-      <nav class="mobile-nav">{% include site-nav.html %}</nav>
-    </aside>
+    {% include menu-overlay.html %}
   </body>
 </html>

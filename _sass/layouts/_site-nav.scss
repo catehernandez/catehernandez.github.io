@@ -1,14 +1,12 @@
-/* Desktop nav */
-.primary-nav {
-  display: none;
-
-  @media (min-width: $medium) {
-    display: block;
-  }
+.site-nav {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }
 
 /* Nav links */
-.site-nav {
+.site-nav__item-list {
   list-style: none;
   padding: 0;
 

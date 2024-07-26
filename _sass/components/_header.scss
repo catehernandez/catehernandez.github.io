@@ -1,7 +1,7 @@
 /** Ensure side margin values correspond to the margins set on `body` **/
 .site-header {
   align-items: center;
-  background-color: $cream;
+  background-color: inherit;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,11 +9,21 @@
   left: 0px;
   position: fixed;
   right: 0px;
-  z-index: 1000;
+  transition: all 500ms ease;
+  z-index: 200;
 
   @media (min-width: $medium) {
     height: 94px;
     padding: 0;
     position: static;
+  }
+}
+
+/** Nav only displays in header on medium and larger screens */
+.site-header__nav-wrapper {
+  display: none;
+
+  @media (min-width: $medium) {
+    display: block;
   }
 }
