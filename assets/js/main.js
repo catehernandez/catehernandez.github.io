@@ -1,11 +1,11 @@
 /**
- * Opens mobile nav overlay and fixes body in place so it won't scroll while
- * nav overlay is open.
+ * Opens menu overlay and fixes document body in place so it won't scroll
+ * while the overlay is open.
  */
-function toggleMobileNav() {
+function toggleMenuOverlay() {
   const body = document.querySelector('body');
-  const overlay = document.querySelector('.mobile-nav__overlay');
+  const overlay = document.querySelector('.menu-overlay');
 
-  overlay.classList.toggle('mobile-nav--open');
+  overlay.classList.toggle('menu-overlay--is-open');
   body.classList.toggle('overflow-hidden');
 }

@@ -1,8 +1,9 @@
-<!--Nested list within the main nav element-->
-<ul class="site-nav">
-  {% for item in site.data.site-nav-links %}
-  <li class="site-nav__item" ontouchend="setTimeout(toggleMobileNav, 250)">
-    <a href="{{ item.link }}" class="site-nav__link"> {{ item.name }} </a>
-  </li>
-  {% endfor %}
-</ul>
+<nav class="site-nav">
+  <ul class="site-nav__item-list">
+    {% for item in site.data.site-nav-links %}
+    <li class="site-nav__item" ontouchend="setTimeout(toggleMobileNav, 250)">
+      <a href="{{ item.link }}" class="site-nav__link"> {{ item.name }} </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,10 +1,7 @@
 <header class="site-header">
-    <h1 class="site-header__title heading3">{{site.name}}</h1>
-    <button
-        class="open-nav-btn bubble bubble--orange"
-        onclick="toggleMobileNav()"
-    >
-        <i class="icon-menu"></i>
-    </button>
-    <nav class="primary-nav">{% include site-nav.html %}</nav>
+    <h1 class="site-title heading3">{{site.name}}</h1>
+    <!-- Small screen element -->
+    {% include toggle-menu-overlay-btn.html %} 
+    <!-- Medium and larger screen element -->
+    <div class="site-header__nav-wrapper">{% include site-nav.html %}</div>
 </header>
