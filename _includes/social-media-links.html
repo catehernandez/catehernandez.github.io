@@ -1,0 +1,17 @@
+<ul class="social-media-links">
+  {% for item in site.data.social-media-links %}
+  <li class="social-media-links__item">
+    <a class="social-media-links__link"
+        href="{{ item.link }}"
+        target="_blank"
+        aria-label="{{ item.label }}">
+      <span class="social-media-links__bubble 
+                   bubble 
+                   bubble--{{item.icon-color | default: 'primary'}}"
+             aria-hidden="true">
+        {% include icon.html icon=item.icon %}
+      </span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

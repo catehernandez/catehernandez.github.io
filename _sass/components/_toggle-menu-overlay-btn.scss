@@ -3,6 +3,10 @@
   border: none;
   color: $cream;
   font-size: 1.25rem;
+
+  @media (min-width: $medium) {
+    display: none;
+  }
 }
 
 .toggle-menu-overlay-btn__icon--menu {

@@ -10,15 +10,12 @@ footer {
 
 //remove list styling
 .footer-contact-links {
+  align-items: center;
+  display: flex;
+  gap: .75em;
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.footer-contact__item {
-  display: inline;
-  margin: 0 0.5rem;
-  font-size: 1.5rem;
 }
 
 .footer-contact__link {
@@ -26,5 +23,10 @@ footer {
 
   &:visited {
     color: $tangerine;
+  }
+
+  svg {
+    height: 1.5em;
+    width: auto;
   }
 }

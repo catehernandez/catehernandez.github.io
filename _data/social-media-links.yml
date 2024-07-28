@@ -1,0 +1,10 @@
+- link: https://www.linkedin.com/in/catehernandez/
+  icon: linkedin-logo
+  label: My LinkedIn profile
+- link: https://github.com/catehernandez/
+  icon: invertocat-logo
+  icon-color: inverse
+  label: My GitHub profile
+- link: https://x.com/cate_hernandez 
+  icon: twitter-logo
+  label: Twitter
