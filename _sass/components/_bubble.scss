@@ -6,18 +6,14 @@
   font-size: 1.5rem;
   justify-content: center;
   width: 44px;
-
-  @media (min-width: $medium) {
-    display: none;
-  }
 }
 
-.bubble--orange {
+.bubble--primary {
   background-color: $tangerine;
   color: $cream;
 }
 
-.bubble--ecru {
+.bubble--inverse {
   background-color: $cream;
   color: $tangerine;
 }

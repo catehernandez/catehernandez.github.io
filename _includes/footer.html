@@ -1,14 +1,15 @@
 <footer>
   <ul class="footer-contact-links">
-    {% for item in site.data.contact-links %}
+    {% for item in site.data.social-media-links %}
     <li class="footer-contact__item">
       <a
         class="footer-contact__link"
         href="{{ item.link }}"
         target="_blank"
         aria-label="{{ item.label }}"
-        ><i class="footer__icon {{ item.icon }}"></i
-      ></a>
+        >
+        {% include icon.html icon=item.icon %}
+      </a>
     </li>
     {% endfor %}
   </ul>
