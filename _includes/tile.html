@@ -1,0 +1,18 @@
+<section class="tile">
+  <h3 class="tile__title">{{include.title}}</h1>
+  <p class="tile__subtitle">{{include.subtitle}}</p>
+  <p class="tile__description">{{include.description}}</p>
+  <ul class="tile__links">
+  {% for item in include.links %}
+    <li class="tile__links__list-item"> 
+      <a class="tile__links__link" href="{{ item.href }}">
+          <div class="tile__links__link__icon">
+            {% assign icon=item.icon | default: 'arrow-right-circle' %}
+            {% include icon.html icon=icon %}
+          </div>
+          {{ item.text }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

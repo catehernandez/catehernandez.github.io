@@ -1,3 +1,39 @@
+.index-page__section {
+    width: 100%;
+
+    @media (min-width: $large) {
+        display: grid;
+        gap: 1.5em;
+        grid-template-columns: repeat(8, 6em);
+    }
+
+    @media (min-width: $x-large) {
+        grid-template-columns: repeat(12, 4.5em);
+    }
+}
+
+.index-page__section__header {
+    margin-bottom: 1em;
+
+    @media (min-width: $medium) {
+        grid-column: 1/span 3;
+    }
+
+    @media (min-width: $x-large) {
+        grid-column: 1/span 4;
+    }
+}
+
+.index-page__section__content {
+    @media (min-width: $medium) {
+        grid-column: 4/-1;
+    }
+
+    @media (min-width: $x-large) {
+        grid-column: 6/-1;
+    }
+}
+
 #intro {
   display: flex;
   flex-direction: column;

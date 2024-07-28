@@ -63,6 +63,8 @@
 }
 
 .project__tech-stack {
-  font-size: 0.9rem;
-  font-weight: 300;
+  @include font-face($jetbrains-mono, 400, normal);
+  color: $light-black;
+  font-size: .85rem;
+  font-weight: 400;
 }

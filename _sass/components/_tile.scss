@@ -1,0 +1,52 @@
+.tile {
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.tile__links {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & li {
+        display: inline;
+    }
+}
+
+.tile__links__link {
+    align-items: center;
+    display: inline-flex;
+    gap: .5em;
+}
+
+.tile__links__link,
+.tile__links__link:visited {
+    @include font-face($jetbrains-mono, 500, normal);
+    color: inherit;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+.tile__links__link:hover {
+    color: $tangerine;
+    transition: color 300ms ease;
+}
+
+.tile__links__link__icon {
+    display: inline;
+    color: $tangerine;
+}
+
+.tile__subtitle {
+  @include font-face($jetbrains-mono, 400, normal);
+  color: $light-black;
+  font-size: 1em;
+  font-weight: 400;
+  margin: .5em 0;
+}
+
+.tile__title {
+  font-size: 1.5em;
+}
