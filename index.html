@@ -14,9 +14,13 @@ layout: default
   <div class="contact" role="group">{% include social-media-links.html %}</div>
 </section>
 
-<section id="projects">
-  <h2 class="projects-section-header">Projects</h2>
-  {% include projects.html %}
+<section class="index-page__section" id="projects">
+  <h2 class="index-page__section__header">Projects</h2>
+  <div class="index-page__section__content">
+  {% for project in site.data.projects %}
+    {% include tile.html title=project.name subtitle=project.role links=project.links description=project.description %}
+  {% endfor %}
+  </div>
 </section>
 
 {% include footer.html %}

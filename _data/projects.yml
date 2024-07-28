@@ -1,4 +1,15 @@
+- name: Big Red Cinemas Concept Project
+  role: UX/UI Designer
+  description: Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere consequat purus laoreet eu imperdiet elit vitae malesuada. Eget nascetur aliquam tortor justo tellus cursus
+  links:
+    - href: /
+      text: Read the full case study
 - name: Intueat
+  role: Designer & Developer
+  links:
+    - href: /
+      text: GitHub
+      icon: external-link
   img: /assets/img/intueat-dashboard.png
   demo-video: https://www.youtube.com/watch?v=JR2e6igElg4
   github-link: https://github.com/catehernandez/food-log
@@ -20,13 +31,13 @@
     - Created custom checkbox component to display logs
     - Created custom calendar component and integrated Recharts library to display past entries in a visually appealing manner
     - Syncs Redux state across tabs
-- name: Spice Converter
-  img: /assets/img/spice-converter.png
-  site-link: https://spice-y.surge.sh/
-  github-link: https://github.com/catehernandez/spice-converter
-  tech-stack:
-    - React
-    - React Select
-  summary: Converts spices from whole to ground, and vice versa
-  description:
-    - Used React hooks
+- name: Internet For All NYC Campaign
+  role: Designer
+  description: Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere consequat purus laoreet eu imperdiet elit vitae malesuada. Eget nascetur aliquam tortor justo tellus cursus.
+  links:
+    - href: /
+      text: Figma
+      icon: external-link
+    - href: /
+      text: Archived Site
+      icon: external-link
