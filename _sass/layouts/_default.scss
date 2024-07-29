@@ -6,10 +6,14 @@ html {
 
 body {
   background-color: $cream;
-  margin: 0px 22px;
+  padding: 2.5em 1.25em;
 
   @media (min-width: $medium) {
-    margin: 0px 36px;
+    padding: 3.5em 2em;
+  }
+
+  @media (min-width: $large) {
+    padding: 3.5em 5em;
   }
 
   @media (min-width: $x-large) {
