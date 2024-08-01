@@ -14,12 +14,24 @@ layout: default
   <div class="contact" role="group">{% include social-media-links.html %}</div>
 </section>
 
+
+<section class="index-page__section" id="experience">
+  <h2 class="index-page__section__header">Experience</h2>
+  <div class="index-page__section__content">
+    {% for item in site.data.experience %}
+      {% include tile.html title=item.company subtitle=item.role description=item.description %}
+    {% endfor %}
+    
+    {% include download-link.html text="Download Full Résumé" file-path="/Cate-Hernandez-Resume.pdf" %}
+  </div>
+</section>
+
 <section class="index-page__section" id="projects">
   <h2 class="index-page__section__header">Projects</h2>
   <div class="index-page__section__content">
-  {% for project in site.data.projects %}
-    {% include tile.html title=project.name subtitle=project.role links=project.links description=project.description %}
-  {% endfor %}
+    {% for project in site.data.projects %}
+      {% include tile.html title=project.name subtitle=project.role links=project.links description=project.description %}
+    {% endfor %}
   </div>
 </section>
 
