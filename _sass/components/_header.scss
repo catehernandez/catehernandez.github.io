@@ -21,6 +21,12 @@
   }
 }
 
+.site-header__homepage-link,
+.site-header__homepage-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 /** Nav only displays in header on medium and larger screens */
 .site-header__nav-wrapper {
   display: none;
