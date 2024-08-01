@@ -1,0 +1,17 @@
+.error-page__content{
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.error-page__error-code {
+    @include font-face($jetbrains-mono, 400, normal);
+    font-size: 12rem;
+}
