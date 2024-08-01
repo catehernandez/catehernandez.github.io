@@ -1,7 +1,9 @@
 .index-page__section {
+    margin: 3.5em 0;
     width: 100%;
 
     @media (min-width: $large) {
+        margin: 4.5em 0;
         display: grid;
         gap: 1.5em;
         grid-template-columns: repeat(8, 6em);

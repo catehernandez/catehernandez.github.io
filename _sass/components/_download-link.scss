@@ -1,0 +1,9 @@
+.download-link,
+.download-link:visited {
+    @include font-face($jetbrains-mono, 400, normal);
+    background-color: $tangerine;
+    border-radius: 1.5em;
+    color: $cream;
+    padding: .5em 1em;
+    text-decoration: none;
+}
